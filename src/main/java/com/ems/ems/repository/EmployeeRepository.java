@@ -8,6 +8,5 @@ import java.util.Optional;
 
 public interface EmployeeRepository extends JpaRepository<EmployeeEntity, Long> {
     List<EmployeeEntity> findAllByIsDeleted(boolean isDeleted);
-
     Optional<EmployeeEntity> findByIdAndIsDeleted(Long id, boolean isDeleted);
 }

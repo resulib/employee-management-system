@@ -1,18 +1,17 @@
 package com.ems.ems.dto;
 
-import com.ems.ems.constants.Position;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class EmployeeDTO {
     private Long id;
     private String name;
     private int age;
     private String phoneNumber;
-    private Position position;
+    private String position;
     private double salary;
 }

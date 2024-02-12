@@ -1,6 +1,5 @@
 package com.ems.ems.entity;
 
-import com.ems.ems.constants.Position;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -25,9 +24,7 @@ public class EmployeeEntity {
 
     @Column(name = "phone_number", unique = true)
     private String phoneNumber;
-
-    @Enumerated(EnumType.STRING)
-    private Position position;
+    private String position;
     private double salary;
     private boolean isDeleted;
 
